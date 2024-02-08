@@ -2251,7 +2251,6 @@ def on_ui_tabs():
             civit_default2.change(passvaluebetweenradio, inputs=civit_default2, outputs=civit_default)
             civit_ispruned2.change(passvaluebetweenradio, inputs=civit_ispruned2, outputs=civit_ispruned)
             civit_alsodownvae2.change(passvaluebetweencheckbox, inputs=civit_alsodownvae2, outputs=civit_alsodownvae)
-            finish_audio = gr.Audio(interactive=False, value=os.path.join(extension_dir, "notification.mp3"), elem_id="finish_audio", visible=False)
         with gr.Accordion("List of Every Hashtags and its Path", open=False, visible=True) as bottomlist:
             bottomtable = gr.DataFrame(
                 buildarrayofhashtags('bottom'),
